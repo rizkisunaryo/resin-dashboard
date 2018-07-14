@@ -30,12 +30,13 @@ class DroneUI extends PureComponent {
       <div
         style={{
           position: 'absolute',
-          right: this.props.droneObj.long * 10000,
-          top: this.props.droneObj.lat * 10000,
+          left: this.props.droneObj.long * 25000,
+          bottom: this.props.droneObj.lat * 25000,
           color: this.props.isNotMoving ? 'red' : 'black'
         }}>
         {this.props.id} <br />
-        {this.props.droneObj.lat},{this.props.droneObj.long} <br />
+        {this.props.droneObj.lat.toString().substring(0, 7)},
+        {this.props.droneObj.long.toString().substring(0, 7)} <br />
         {this.props.isNotMoving ? 0 : this.state.speed} m/s
       </div>
     )
