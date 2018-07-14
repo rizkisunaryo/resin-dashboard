@@ -1,0 +1,38 @@
+{
+  "name": "resin-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "node server.js",
+    "precommit": "npm test",
+    "start": "next start",
+    "test": "standard --fix && jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-transform-inline-environment-variables": "0.4.1",
+    "express": "4.16.3",
+    "next": "6.1.1",
+    "pre-commit": "1.2.2",
+    "react": "16.4.1",
+    "react-dom": "16.4.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.0.0-beta.42",
+    "enzyme": "3.2.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "jest": "22.4.3",
+    "standard": "11.0.1"
+  },
+  "precommit": "test",
+  "standard": {
+    "globals": [
+      "expect",
+      "test"
+    ]
+  }
+}
