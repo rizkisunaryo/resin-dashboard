@@ -19,7 +19,11 @@
     "next": "6.1.1",
     "pre-commit": "1.2.2",
     "react": "16.4.1",
-    "react-dom": "16.4.1"
+    "react-dom": "16.4.1",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "repatch": "1.3.12",
+    "socket.io": "2.1.1"
   },
   "devDependencies": {
     "@babel/preset-env": "7.0.0-beta.42",
@@ -31,6 +35,7 @@
   "precommit": "test",
   "standard": {
     "globals": [
+      "describe",
       "expect",
       "test"
     ]
